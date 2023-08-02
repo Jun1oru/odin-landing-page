@@ -9,7 +9,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    row-gap: 100px;
+    row-gap: 50px;
 
     padding: 10px 100px 100px 100px;
     background-color: #1F2937;
@@ -48,13 +48,14 @@ a, p, button, img {
 
 .left-side, .right-side {
     flex: 1;
+    max-width: 500px;
 }
 
 .left-side > h2, .left-side > p {
     margin-bottom: 10px;
 }
 
-.left-side > button {
+button {
     background-color: #3882F6;
     border-radius: 5px;
     width: 115px;
@@ -64,6 +65,7 @@ a, p, button, img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 
     background-color: gray;
     height: 150px;
@@ -104,4 +106,78 @@ a, p, button, img {
     height: 150px;
     border: 3px solid #3882F6;
     border-radius: 10px;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 50px 100px;
+}
+
+.quote-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.thor {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-left: auto;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 100px;
+}
+
+.call-to-action > div {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 25px 0;
+}
+
+.call-to-action > div > button {
+    border-color: white;
+}
+
+.call-main {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.call-secondary {
+    font-size: 12px;
+    color: #E5E7EB;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 25px 0;
+    background-color: #1F2937;
+}
+
+.footer > p {
+    font-size: 12px;
 }
